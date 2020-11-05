@@ -1,0 +1,23 @@
+@charset "utf-8";
+html{
+	height: 100%;
+}
+body {
+    margin:0;
+    padding:0;
+    background-color: #fff;
+}
+
+.mail {
+	margin-top: 50px;
+	font-size: 20px;
+	text-align: right;
+	color: white;
+	margin-right: 20px;
+}
+.link{
+	margin-top: 35px;
+	margin-left: 50px;
+	width: 80px;
+	height: 80px;
+}

@@ -1,4 +1,15 @@
 $(document).ready(function($){
+    function entoropy(data){
+        // фиксануть приходит массив массивов а так быть не должно 
+        let res = 0;
+        console.log(data);
+        for (let i = 0; i < data.length; i++) {
+            let sum = -(data[i] * Math.log2(data[i]));
+            res+=sum;
+        } 
+        res = res.toFixed(3);
+        return res;
+    }
     var table = `
         <input type = \"text\" name = \"valueA$i\" class = \"valueA$i\">
         <input type = \"text\" name = \"valueB$i\" class = \"valueB$i\">
@@ -58,6 +69,9 @@ $(document).ready(function($){
         for (let o = 0; o < 4; o++) {
             sum += massSchetchik[o];
         }
+        massSchetchikses = entoropy(massSchetchik);
+        var chars = "<h3>Энтропия: " + massSchetchikses + "</h3>"
+
         if(sum<=1){
             for (let k = 0; k < 4; k++) {
             
@@ -68,5 +82,7 @@ $(document).ready(function($){
             alert("У вас числа в сумме больше 1");
         }
         $('.vivod').html(tablses); 
+        $('.vivods').html(chars); 
+
     });
 });

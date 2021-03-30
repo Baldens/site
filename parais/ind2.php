@@ -23,6 +23,7 @@
                 echo "<br><button type='button' class='ok'>Реализовать</button>";
             ?>
             <p class="vivod"></p>
+            <p class="vivods"></p>
         </form>
     </div>
     <script src="script.js"></script>

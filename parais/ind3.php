@@ -1,3 +1,6 @@
+<?php 
+    session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,7 +13,9 @@
 <body>
     <div>
         <form method="POST">
-            <input type="text" name="count" value="2">
+            <p>Введите мощность алфавита: </p>
+            <input type="text" name="count" value="3">
+            <p>Введите длина слова: </p>
             <input type="text" name="count2" value="4">
             <button type="submit">Готово</button><br><br><br>
             <?php
@@ -25,6 +30,7 @@
                 echo "<br><button type='button' class='ok'>Реализовать</button>";
             ?>
             <p class="vivod"></p>
+            <p class="vivods"></p>
         </form>
     </div>
     <script src="script2.js"></script>
